@@ -5,11 +5,12 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon server.js",
-    "start:prod": "NODE_ENV=production nodemon server.js"
+    "prod": "cross-env NODE_ENV=production nodemon server.js"
   },
   "author": "hamza benlafkih",
   "license": "ISC",
   "dependencies": {
+    "cross-env": "^7.0.2",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mongoose": "^5.10.4",
